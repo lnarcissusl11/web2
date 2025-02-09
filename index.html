@@ -11,10 +11,11 @@
   <h1>가계부202502</h1>
   <h2>지출등록</h2>
       <form class="spend-register">
-          <label>날짜</label>
-          <input type="date" id="date" required>
+        <label>날짜</label>
+        <input type="text" id="dateText" placeholder="YYYYMMDD" maxlength="8">
+        <input type="date" id="datePicker" required>
           <br>
-          <label for="category">대분류</label>
+          <label for="category">대분류</label> 
           <select id="category" required>
               <option value="">선택</option>
               <option value="housing">주거비</option>
@@ -47,9 +48,10 @@
           <br>
           <label for="tags">태그</label>
           <select id="tags"></select>
+          <button type="button" id="addtags">태그추가</button>
 
           <br>
-          <button type="button">지출등록</button>
+          <button type="button" id="registerSpend">지출등록</button>
       </form>
   <h2>등록내역</h2>
     <table>

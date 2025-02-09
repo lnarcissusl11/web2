@@ -4,3 +4,13 @@ h1{
 .spend-register{
     
 }
+
+#datePicker {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    width: 200px;
+}
+#datePicker::-webkit-datetime-edit {
+    display: none; /* 크롬에서 텍스트 영역을 숨김 */
+}
